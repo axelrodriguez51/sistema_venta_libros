@@ -1,5 +1,14 @@
 # sistema de ventas de libros 
 
+## glosario 
+
+- **PK**: _Primari Key_
+- **FK**: _Forein Key_
+- **UQ**: _Unique Atribute_
+- **ED**: Entidad de datos
+- **EP**: Entidad pivote
+- **EC**: entidad de catalogo
+
 ## Descripción
 Se desea diseñar un **sistema de venta de libros**. Debe contemplar el **catálogo de libros actual** (identificador, clave, título, autor, editorial, ubicación, precio, costo, descuento)
 los **proveedores** (editorial, clave, descripción, observaciones),
