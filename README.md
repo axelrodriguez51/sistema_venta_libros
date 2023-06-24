@@ -21,7 +21,7 @@ objetivos
 - lista de productos en stock
 - lista de ventas por mes
 
-## **Entidades**
+## **Entidades** bosquejo inicial
 ### **c_libros**
 - id_libros (PK) identificador
 - clave 
@@ -32,6 +32,33 @@ objetivos
 - precio
 - costo
 - descuento
+## **venta**
+- id_venta (PK)
+- id_cliente
+- datos_facturacion
+- cantidad
+- producto
+- precio
+- total_pagar
+- impuestos
+- fecha_compra
+- fecha_entrega
+- id_empleado
+## **cliente**
+- id_cliente (PK)
+- nombre
+- dirección
+- datos_fiscales
+- puesto
+## **empleado**
+- id_empleado (PK)
+- nombre
+- dirección
+- datos_fiscales
+- puesto
+## **autor**
+- id_autor (PK)
+- nombre
 ### **editorial**
 - id_editorial (PK)
 - descripción
