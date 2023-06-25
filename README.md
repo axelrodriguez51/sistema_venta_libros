@@ -13,7 +13,7 @@
 Se desea diseñar un **sistema de venta de libros**. Debe contemplar el **catálogo de libros actual** (identificador, clave, título, autor, editorial, ubicación, precio, costo, descuento)
 los **proveedores** (editorial, clave, descripción, observaciones),
 las **ventas**(numero cliente, datos facturación, cantidad, producto, precio, total a pagar, impuestos, fecha de compra, fecha de entrega, empleado que atendió la compra),
- la información de los **empleados** que atienden y los datos del **cliente** que realiza la compra (nombre, dirección, datos fiscales, puesto, etc).
+la información de los **empleados** que atienden y los datos del **cliente** que realiza la compra (nombre, dirección, datos fiscales, puesto, etc).
 
 objetivos
 1. Diseñar el modelo de bases de datos para atender los requerimientos del problema.
@@ -32,8 +32,8 @@ objetivos
 
 ## **Entidades** bosquejo inicial
 ### **c_libros**
-- id_libros (PK) identificador
-- clave 
+- id_libros **PK**** identificador
+- clave **UQ**
 - título
 - id_autor
 - id_editorial
@@ -42,7 +42,7 @@ objetivos
 - costo
 - descuento
 ## **venta**
-- id_venta (PK)
+- id_venta **PK**
 - id_cliente
 - datos_facturacion
 - cantidad
@@ -54,26 +54,33 @@ objetivos
 - fecha_entrega
 - id_empleado
 ## **cliente**
-- id_cliente (PK)
+- id_cliente **PK**
 - nombre
+- apellido_paterno
+- apellido_materno
+- telefono
 - dirección
-- datos_fiscales
-- puesto
+- email
+- id_tarjeta
 ## **empleado**
-- id_empleado (PK)
+- id_empleado **PK**
 - nombre
 - dirección
 - datos_fiscales
 - puesto
-## **autor**
-- id_autor (PK)
+## **autoria**
+- id_autoria **PK**
+- id_autor
+- id_libro
+## **c_autor**
+- id_autor **PK**
 - nombre
 ### **editorial**
-- id_editorial (PK)
+- id_editorial **PK**
 - descripción
 - id_ubicacion
 ### **proveedor**
-- id_proveedor (PK)
+- id_proveedor **PK**
 - id_editorial
 - clave
 - descripción
